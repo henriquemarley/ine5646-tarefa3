@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+#Albuns {
+    margin: 0 auto;
+}
+
+#formulario {
+    color: black;
+}
+
+#nomeAutor {
+    color: black;
+    top: -60px;
+    position: relative;
+    align-content: center;
+    text-align: center;
+}
+
+html{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+
+.coverAlbum {
+    border-radius: 5%;
+    width:500px;
+    height:500px;
+    max-width: 100%;
+}
+
+#banner {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-image: url("https://atibaiaconnection.com.br/wp-content/uploads/2018/08/microfone.jpg");
+    height: 200px;
+    padding: 20px;
+}
+
+.container {
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    border-radius: 25px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-top: 25px;
+    padding-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 66.76%;
+    position: relative;
+    left: 15%;
+}
+
+#fotoPerfil {
+    top: -70px;
+    left: calc(50% - 70px);
+    position: relative;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.titulo {
+    font-size: 24pt;
+    color: darkslategray;
+    font-weight: bold;
+}
+
+.subtitulo {
+    font-size: 16pt;
+    color: lightslategray;
+}
+
+.resumo {
+    color: lightslategray;
+}
