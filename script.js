@@ -6,7 +6,8 @@ class Capa1 {
     this.image.src = 'https://i.scdn.co/image/ab67616d0000b273a786ad0992cfe0b2719729bf';
     this.image.style.height = '500px';
     this.image.style.weight = '500px';
-    this.image.style.maxwidth = '100%';    
+    this.image.style.maxWidth = '100%'; 
+    this.image.style.borderRadius = '5%';      
     this.image.addEventListener('click', this._contraCapa);
     this.containerElement.appendChild(this.image);
   }
@@ -27,7 +28,8 @@ class Capa2 {
     this.image.src = 'https://i.scdn.co/image/ab67616d0000b273d9194aa18fa4c9362b47464f';
     this.image.style.height = '500px';
     this.image.style.weight = '500px';
-    this.image.style.maxwidth = '100%';
+    this.image.style.maxWidth = '100%';
+    this.image.style.borderRadius = '5%';   
     this.image.addEventListener('click', this._contraCapa);
     this.containerElement.appendChild(this.image);
   }
@@ -48,7 +50,7 @@ class Capa3 {
     this.image.src = 'https://i.scdn.co/image/ab67616d0000b273dfa5bb0198242e86e8fbf9a2';
     this.image.style.height = '500px';
     this.image.style.weight = '500px'; 
-    this.image.style.maxwidth = '100%';    
+    this.image.style.maxWidth = '100%';   
     this.image.addEventListener('click', this._contraCapa);
     this.containerElement.appendChild(this.image);
   }
@@ -61,6 +63,65 @@ class Capa3 {
 const elementcapa3 = document.querySelector('#capa3');
 const capa3 = new Capa3(elementcapa3);
 
+class Like1 {
+  constructor(containerElement) {
+    this.containerElement = containerElement;
+    this.image = document.createElement('img');
+    this._likePost = this._likePost.bind(this);
+    this.image.src = 'https://lh3.googleusercontent.com/proxy/C3cLAtK-Ny1CncvBbKy1SNdQY4wqNydhhOodji9pgaxoMFrlyVypOCIAcXebI_LgDu8hISPNJJjFswQo2T0X7J3Kswjch4fEWwsI3UhNRxeSB66sK-klamgoln023t2p';
+    this.image.style.height = '30px';
+    this.image.style.margin = '10px';
+    this.image.style.opacity = '50%';
+    this.containerElement.appendChild(this.image);
+    this.image.addEventListener('click', this._likePost);
+  }
+  _likePost () {
+    this.image.style.opacity = '1';
+  }
+}
+
+const elementlike1 = document.querySelector('#like1');
+const like1 = new Like1(elementlike1);
+
+class Like2 {
+  constructor(containerElement) {
+    this.containerElement = containerElement;
+    this.image = document.createElement('img');
+    this._likePost = this._likePost.bind(this);
+    this.image.src = 'https://lh3.googleusercontent.com/proxy/C3cLAtK-Ny1CncvBbKy1SNdQY4wqNydhhOodji9pgaxoMFrlyVypOCIAcXebI_LgDu8hISPNJJjFswQo2T0X7J3Kswjch4fEWwsI3UhNRxeSB66sK-klamgoln023t2p';
+    this.image.style.height = '30px';
+    this.image.style.margin = '10px';
+    this.image.style.opacity = '50%';
+    this.containerElement.appendChild(this.image);
+    this.image.addEventListener('click', this._likePost);
+  }
+  _likePost () {
+    this.image.style.opacity = '1';
+  }
+}
+
+const elementlike2 = document.querySelector('#like2');
+const like2 = new Like1(elementlike2);
+
+class Like3 {
+  constructor(containerElement) {
+    this.containerElement = containerElement;
+    this.image = document.createElement('img');
+    this._likePost = this._likePost.bind(this);
+    this.image.src = 'https://lh3.googleusercontent.com/proxy/C3cLAtK-Ny1CncvBbKy1SNdQY4wqNydhhOodji9pgaxoMFrlyVypOCIAcXebI_LgDu8hISPNJJjFswQo2T0X7J3Kswjch4fEWwsI3UhNRxeSB66sK-klamgoln023t2p';
+    this.image.style.height = '30px';
+    this.image.style.margin = '10px';
+    this.image.style.opacity = '50%';
+    this.containerElement.appendChild(this.image);
+    this.image.addEventListener('click', this._likePost);
+  }
+  _likePost () {
+    this.image.style.opacity = '1';
+  }
+}
+
+const elementlike3 = document.querySelector('#like3');
+const like3 = new Like3(elementlike3);
 
 /*function mudaCapa1(event) {
   const image = event.currentTarget;
