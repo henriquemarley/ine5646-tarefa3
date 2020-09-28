@@ -68,27 +68,46 @@ class Like1 {
     this.containerElement = containerElement;
     this.image = document.createElement('img');
     this._likePost = this._likePost.bind(this);
-    this.image.src = 'https://lh3.googleusercontent.com/proxy/C3cLAtK-Ny1CncvBbKy1SNdQY4wqNydhhOodji9pgaxoMFrlyVypOCIAcXebI_LgDu8hISPNJJjFswQo2T0X7J3Kswjch4fEWwsI3UhNRxeSB66sK-klamgoln023t2p';
+    this.image.src = 'https://w0.pngwave.com/png/313/801/like-png-clip-art-thumbnail.png';
     this.image.style.height = '30px';
     this.image.style.margin = '10px';
     this.image.style.opacity = '50%';
+    this.image.style.float = 'left'
     this.containerElement.appendChild(this.image);
     this.image.addEventListener('click', this._likePost);
+    this.contador = document.createElement('p');
+    this.contador.innerText = 0;
+    this.contador.style.color = 'black';
+    this.containerElement.appendChild(this.contador);
   }
   _likePost () {
     this.image.style.opacity = '1';
+    this.contador.innerText = ++this.contador;
   }
 }
 
 const elementlike1 = document.querySelector('#like1');
 const like1 = new Like1(elementlike1);
 
+/*class Contadorlike1 {
+  constructor(containerElement) {
+    this.containerElement = containerElement;
+    this.likes = document.createElement('p');
+    this.likes.innerText = 0;
+    this.likes.style.color = 'black';
+    this.containerElement.appendChild(this.likes);
+  }
+} 
+
+const elementcontador1 = document.querySelector('#contadorlike1');
+const contadorlike1 = new Contadorlike1(elementlike1); */
+
 class Like2 {
   constructor(containerElement) {
     this.containerElement = containerElement;
     this.image = document.createElement('img');
     this._likePost = this._likePost.bind(this);
-    this.image.src = 'https://lh3.googleusercontent.com/proxy/C3cLAtK-Ny1CncvBbKy1SNdQY4wqNydhhOodji9pgaxoMFrlyVypOCIAcXebI_LgDu8hISPNJJjFswQo2T0X7J3Kswjch4fEWwsI3UhNRxeSB66sK-klamgoln023t2p';
+    this.image.src = 'https://w0.pngwave.com/png/313/801/like-png-clip-art-thumbnail.png';
     this.image.style.height = '30px';
     this.image.style.margin = '10px';
     this.image.style.opacity = '50%';
@@ -108,7 +127,7 @@ class Like3 {
     this.containerElement = containerElement;
     this.image = document.createElement('img');
     this._likePost = this._likePost.bind(this);
-    this.image.src = 'https://lh3.googleusercontent.com/proxy/C3cLAtK-Ny1CncvBbKy1SNdQY4wqNydhhOodji9pgaxoMFrlyVypOCIAcXebI_LgDu8hISPNJJjFswQo2T0X7J3Kswjch4fEWwsI3UhNRxeSB66sK-klamgoln023t2p';
+    this.image.src = 'https://w0.pngwave.com/png/313/801/like-png-clip-art-thumbnail.png';
     this.image.style.height = '30px';
     this.image.style.margin = '10px';
     this.image.style.opacity = '50%';
