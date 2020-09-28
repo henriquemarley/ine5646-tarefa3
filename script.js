@@ -82,7 +82,7 @@ class Like1 {
   }
   _likePost () {
     this.image.style.opacity = '1';
-    this.contador.innerText = 1;
+    this.contador.innerText++;
   }
 }
 
@@ -121,7 +121,7 @@ class Like2 {
   }
   _likePost () {
     this.image.style.opacity = '1';
-    this.contador.innerText = 1;
+    this.contador.innerText++;
   }
 }
 
@@ -147,7 +147,7 @@ class Like3 {
   }
   _likePost () {
     this.image.style.opacity = '1';
-    this.contador.innerText = 1;
+    this.contador.innerText++;
   }
 }
 
