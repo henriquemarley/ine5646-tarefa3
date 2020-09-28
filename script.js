@@ -72,17 +72,17 @@ class Like1 {
     this.image.style.height = '30px';
     this.image.style.margin = '10px';
     this.image.style.opacity = '50%';
-    this.image.style.float = 'left'
+    this.image.style.float = 'left';
     this.containerElement.appendChild(this.image);
     this.image.addEventListener('click', this._likePost);
     this.contador = document.createElement('p');
     this.contador.innerText = 0;
-    this.contador.style.color = 'black';
+    this.contador.style.color = 'darkslategray';
     this.containerElement.appendChild(this.contador);
   }
   _likePost () {
     this.image.style.opacity = '1';
-    this.contador.innerText = ++this.contador;
+    this.contador.innerText = 1;
   }
 }
 
@@ -109,13 +109,19 @@ class Like2 {
     this._likePost = this._likePost.bind(this);
     this.image.src = 'https://w0.pngwave.com/png/313/801/like-png-clip-art-thumbnail.png';
     this.image.style.height = '30px';
+    this.image.style.float = 'left';
     this.image.style.margin = '10px';
     this.image.style.opacity = '50%';
     this.containerElement.appendChild(this.image);
     this.image.addEventListener('click', this._likePost);
+    this.contador = document.createElement('p');
+    this.contador.innerText = 0;
+    this.contador.style.color = 'darkslategray';
+    this.containerElement.appendChild(this.contador);
   }
   _likePost () {
     this.image.style.opacity = '1';
+    this.contador.innerText = 1;
   }
 }
 
@@ -130,12 +136,18 @@ class Like3 {
     this.image.src = 'https://w0.pngwave.com/png/313/801/like-png-clip-art-thumbnail.png';
     this.image.style.height = '30px';
     this.image.style.margin = '10px';
+    this.image.style.float = 'left';
     this.image.style.opacity = '50%';
     this.containerElement.appendChild(this.image);
     this.image.addEventListener('click', this._likePost);
+    this.contador = document.createElement('p');
+    this.contador.innerText = 0;
+    this.contador.style.color = 'darkslategray';
+    this.containerElement.appendChild(this.contador);
   }
   _likePost () {
     this.image.style.opacity = '1';
+    this.contador.innerText = 1;
   }
 }
 
